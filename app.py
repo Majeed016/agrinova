@@ -183,6 +183,10 @@ class ContactUs(db.Model):
 @app.route("/")
 def hello_world():
     return render_template("index.html")
+
+@app.route("/language")
+def language():
+    return render_template("language.html")
     
 
 @app.route("/aboutus")
